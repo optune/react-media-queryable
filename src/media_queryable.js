@@ -48,11 +48,12 @@ export default class extends React.Component {
       },
       this
     );
-    return React.DOM.div({
-      children: renderedChildren,
-      className: this.props.className,
-      style: this.props.style
-    });
+    return <div
+      className={this.props.className}
+      style={this.props.style}
+	>
+      {renderedChildren}
+	</div>
   }
 
   _currentMediaQuery = () => {

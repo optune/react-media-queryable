@@ -110,11 +110,14 @@ var _class = function (_React$Component) {
           });
         }
       }, this);
-      return React.DOM.div({
-        children: renderedChildren,
-        className: this.props.className,
-        style: this.props.style
-      });
+      return React.createElement(
+        "div",
+        {
+          className: this.props.className,
+          style: this.props.style
+        },
+        renderedChildren
+      );
     }
   }]);
 
